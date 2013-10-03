@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <script type="text/javascript"
+              src="/canvas-sdk/js/canvas-all.js"></script>
+
+      <script>
+
+          /**
+           * note - this loads on startup
+           */
+          Sfdc.canvas(function() {
+
+              // makes sure you use the "-" instead of "=" because otherwise the JSON
+              // is escaped
+              var sr = <%- signedRequestJson %>;
+              console.log(sr);
+                  // Save the token
+              Sfdc.canvas.oauth.token(sr.oauthToken);
+
+              // Reference the Chatter user's URL from Context.Links object.
+              var url = sr.context.links.chatterFeedsUrl+"/news/"+sr.context.user.userId+"/feed-items";
+              var body = {body : {messageSegments : [{type: "Text", text: "I just loaded the node-canvas app"}]}};
+
+              Sfdc.canvas.client.ajax(url,
+                      {client : sr.client,
+                          method: 'POST',
+                          contentType: "application/json",
+                          data: JSON.stringify(body),
+                          success : function(data) {
+                              if (201 === data.status) {
+                                  console.log("Success");
+                              } }
+                      });
+          });
+
+      </script>
+
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+  </body>
+</html>
