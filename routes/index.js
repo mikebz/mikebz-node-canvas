@@ -6,7 +6,8 @@ var configuration = require("../configuration");
  */
 
 exports.index = function(req, res){
-    res.render('index', { title: "Hello World" });
+    var testData = require("../test-session-object.json");
+    res.render('index', { title: "Test User", signedRequestJson: JSON.stringify(testData) });
 };
 
 exports.authenticate = function(req, res){
