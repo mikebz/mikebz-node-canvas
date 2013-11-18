@@ -1,0 +1,75 @@
+{
+    "userId": "005A0000000Hxu7",
+    "client": {
+        "oauthToken": "123222124124112",
+        "instanceId": "_:node_canvas:",
+        "targetOrigin": "https://na11.salesforce.com",
+        "instanceUrl": "https://na11.salesforce.com"
+    },
+    "issuedAt": 1778141205,
+    "context": {
+        "application": {
+            "developerName": "node_canvas",
+            "referenceId": "09HG0000000Gmez",
+            "applicationId": "06PG0000000GnND",
+            "canvasUrl": "https://localhost:8443/authenticate",
+            "name": "node_canvas",
+            "version": "1.0",
+            "namespace": null,
+            "authType": "SIGNED_REQUEST"
+        },
+        "organization": {
+            "organizationId": "00DA0000000HY7oMAG",
+            "currencyIsoCode": "USD",
+            "multicurrencyEnabled": false,
+            "name": "DocuSign, Inc.",
+            "namespacePrefix": null
+        },
+        "environment": {
+            "dimensions": null,
+            "locationUrl": "https://na11.salesforce.com/_ui/core/chatter/ui/ChatterPage",
+            "displayLocation": "Chatter",
+            "uiTheme": "Theme3",
+            "version": null,
+            "parameters": {}
+        },
+        "links": {
+            "loginUrl": "https://login.salesforce.com/",
+            "chatterFeedItemsUrl": "/services/data/v29.0/chatter/feed-items",
+            "chatterFeedsUrl": "/services/data/v29.0/chatter/feeds",
+            "chatterGroupsUrl": "/services/data/v29.0/chatter/groups",
+            "chatterUsersUrl": "/services/data/v29.0/chatter/users",
+            "enterpriseUrl": "/services/Soap/c/29.0/00DA0000000HY7o",
+            "metadataUrl": "/services/Soap/m/29.0/00DA0000000HY7o",
+            "partnerUrl": "/services/Soap/u/29.0/00DA0000000HY7o",
+            "queryUrl": "/services/data/v29.0/query/",
+            "recentItemsUrl": "/services/data/v29.0/recent/",
+            "restUrl": "/services/data/v29.0/",
+            "searchUrl": "/services/data/v29.0/search/",
+            "sobjectUrl": "/services/data/v29.0/sobjects/",
+            "userUrl": "/005A0000000Hxu7IAC"
+        },
+        "user": {
+            "userId": "005A0000000Hxu7IAC",
+            "userType": "STANDARD",
+            "email": "test@gmail.com",
+            "profileId": "00eA0000000UfYe",
+            "isDefaultNetwork": true,
+            "profilePhotoUrl": "https://c.na11.content.force.com/profilephoto/005/F",
+            "networkId": null,
+            "currencyISOCode": "USD",
+            "siteUrl": null,
+            "firstName": "Mike",
+            "lastName": "Borozdin",
+            "profileThumbnailUrl": "https://c.na11.content.force.com/profilephoto/005/T",
+            "roleId": null,
+            "siteUrlPrefix": null,
+            "accessibilityModeEnabled": false,
+            "language": "en_US",
+            "timeZone": "America/Los_Angeles",
+            "userName": "test@gmail.com",
+            "locale": "en_US",
+            "fullName": "Mike Borozdin"
+        }
+    },
+    "algorithm": "HMACSHA256" }
